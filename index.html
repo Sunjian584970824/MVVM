@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='app'>
+        <input type="text" v-model='text'>
+        <p>{{test}}</p>
+        <span>111</span>
+        <ul>
+            <li>12313</li>
+        </ul>
+        123123
+    </div>
+    <script src="./compile.js"></script>
+    <script src="./mvvm.js"></script>
+    <script>
+        new MVVM({
+            el: '#app',
+            data: {
+                test: '1111111',
+                text: '33333'
+            }
+        })
+    </script>
+</body>
+
+</html>
